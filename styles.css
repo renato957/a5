@@ -1,0 +1,125 @@
+:root {
+    --azul: #6ec1e4;
+    --amarelo: #ffe066;
+    --fundo: #f8fbff;
+    --texto: #333;
+    --contraste-fundo: #000;
+    --contraste-texto: #fff;
+    --fonte-base: 16px;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--fonte-base);
+    background-color: var(--fundo);
+    color: var(--texto);
+    margin: 0;
+    transition: all 0.3s ease;
+  }
+  
+  nav {
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .acessibilidade button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .destaque {
+    color: var(--azul);
+    font-style: italic;
+  }
+  
+  button {
+    background-color: var(--amarelo);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  img {
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  body.contraste {
+    background-color: var(--contraste-fundo);
+    color: var(--contraste-texto);
+  }
+  
+  body.contraste nav {
+    background-color: #111;
+  }
+  
+  body.contraste nav a,
+  body.contraste .acessibilidade button,
+  body.contraste .destaque {
+    color: var(--contraste-texto);
+  }
+  img {
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #ccc;
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05); /* Dá um pequeno efeito de zoom quando o mouse passa */
+  }
+  

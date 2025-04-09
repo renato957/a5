@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viajante Curioso</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="img/travelagency.jpg.png" alt="Logo da Viajante Curioso" class="logo" />
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="acessibilidade">
+        <button onclick="alterarFonte('+')">A+</button>
+        <button onclick="alterarFonte('-')">A-</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" aria-label="Boas-vindas ao site">
+      <h1>Boas-vindas ao <span class="destaque">Viajante Curioso</span></h1>
+      <p>Uma agência feita para quem ama conhecer o mundo!</p>
+      <button>Explorar agora</button>
+    </section>
+
+    <section id="destinos" aria-label="Galeria de destinos">
+      <h2>Destinos Incríveis</h2>
+      <div class="galeria">
+        <img src="img/japao.jpeg" alt="Templo japonês com flores de cerejeira" data-info="Informações sobre o Japão: Cultura rica, templos e paisagens incríveis." />
+        <img src="img/newyork.jpeg" alt="Torre Eiffel sob um céu azul" data-info="Informações sobre os Estados Unidos: Famosa pela arquitetura e pela vida urbana agitada." />
+        <img src="img/noruega.webp" alt="Aurora boreal sobre montanhas nevadas" data-info="Informações sobre a Noruega: Conhecida pelas paisagens naturais e pela aurora boreal." />
+      </div>
+    </section>
+
+    <section id="contato" aria-label="Formulário de contato">
+      <h2>Entre em contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" type="text" />
+
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email" />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
